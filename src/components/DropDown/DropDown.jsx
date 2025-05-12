@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import Sliders from '../../assets/sliders';
+import Sliders from '../../assets/Sliders';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../auth/firebase';
 import { useEffect, useRef, useState } from "react";
