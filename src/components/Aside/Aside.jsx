@@ -28,8 +28,8 @@ function Aside({ addButtonRef }) {
             dispatch(updatePercentage(0));
     
             let urlType = 'raw';
-            if (filetype == 'img') url = 'image';
-            else if (filetype == 'video') url = 'video';
+            if (filetype == 'img') urlType = 'image';
+            else if (filetype == 'video') urlType = 'video';
 
             const res = await axios.post(`https://api.cloudinary.com/v1_1/defcmlp3n/${urlType}/upload`, formData,
                 {onUploadProgress: (event) => {
