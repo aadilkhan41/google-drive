@@ -68,6 +68,7 @@ a{
 
 .imgCont img, .imgCont video {
     width: 100%;
+    height: 160px;
     display: block;
     object-fit: cover;
 }

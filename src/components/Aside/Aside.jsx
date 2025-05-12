@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { addDoc, updateDoc, collection, doc, arrayUnion, query, where, getDocs } from "firebase/firestore";
 import { auth, db } from '../../auth/firebase';
 import { useEffect, useState } from 'react';
+import { fetchFiles } from '../../redux/homeSlice';
 
 function Aside({ addButtonRef }) {
     const [storageLimit, setStorageLimit] = useState(0);
@@ -79,6 +80,7 @@ function Aside({ addButtonRef }) {
             });
             dispatch(updatePercentage(100));
             toast.success('Upload successful!');
+            dispatch(fetchFiles());
         } catch (error) {
             console.error("Error updating file:", error);
             toast.error('Failed! Try again.');

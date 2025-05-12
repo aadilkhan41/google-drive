@@ -31,10 +31,10 @@ export const fetchFiles = createAsyncThunk('homeStorage/fetchFiles', async ( { s
         );
 
         if(searchQuery != undefined){
-            return tableRows.filter(Boolean).filter(row => row.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            return tableRows.filter(Boolean).reverse().filter(row => row.name.toLowerCase().includes(searchQuery.toLowerCase()));
         }
 
-        return tableRows.filter(Boolean);
+        return tableRows.filter(Boolean).reverse();
     } catch (error) {
         console.error("Error:", error);
         toast.error('Please try again later!');

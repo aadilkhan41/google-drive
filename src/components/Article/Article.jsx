@@ -28,7 +28,7 @@ function Article({ label, articledata, setShareinfo }) {
                 <a href={articledata.file} target="_blank" download><RenderIcon fileType={articledata.type} /></a>
                 </section>
             </>}
-            {label === 'home' ? <>
+            {label != null ? <>
                 <section className={styles.foot}>
                     <div>
                         <img src={articledata.profile} alt="Profile Image"/>

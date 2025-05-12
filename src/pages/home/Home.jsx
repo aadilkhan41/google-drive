@@ -14,7 +14,6 @@ import { fetchFiles } from '../../redux/homeSlice';
 
 import Dehaze from '../../assets/Dehaze';
 import GridView from '../../assets/GridView';
-import MoreVert from '../../assets/MoreVert';
 import Group from '../../assets/Group';
 import MyDrive from '../../assets/MyDrive';
 
@@ -71,7 +70,7 @@ function Home() {
                                     {tableRows.map((articledata) => {
                                         return (
                                             <tr key={articledata.key}>
-                                                <td><section className={styles.name}><div><RenderIcon fileType={articledata.type} /></div>{articledata.name}</section></td>
+                                                <td><a href={articledata.file} target="_blank" download><section className={styles.name}><div><RenderIcon fileType={articledata.type} /></div>{articledata.name}</section></a></td>
                                                 {articledata.uid === auth.currentUser.uid ? <>
                                                     <td><section className={styles.reason}>You uploaded on {formatDate(articledata.uploadOn)}</section></td>
                                                     <td><section className={styles.owner}><div><img src={articledata.profile} alt="Profile" /></div>me</section></td>
@@ -81,7 +80,7 @@ function Home() {
                                                     <td><section className={styles.owner}><div><img src={articledata.profile} alt="Profile" /></div>{articledata.email}</section></td>
                                                     <td><section className={styles.location}><div><Group /></div>Shared with me</section></td>
                                                 </>}
-                                                <td><button className={styles.menu} onClick={() => setShareinfo(articledata.key)}><MoreVert /></button></td>
+                                                <td><button className={styles.menu} onClick={() => setShareinfo(articledata.key)}><Group /></button></td>
                                             </tr>
                                         );
                                     })}
