@@ -48,7 +48,7 @@ function NavigationMobile({ addButtonRef }) {
     function linkOnClick(link, label){
         if(link != null){
             setActive(link);
-        }else if(label){
+        }else if(label=='Create'){
             addButtonRef.current.click();
         }
     }
