@@ -6,7 +6,7 @@ This project allows users to upload, preview, manage, and download various types
 
 ## 🚀 Live Demo
 
-![Google Drive Clone](./screenshot.jpg)
+![Google Drive Clone](./Screenshot.jpg)
 
 👉 [Click here to try Google Drive](https://google-drive-green-ten.vercel.app/)
 
