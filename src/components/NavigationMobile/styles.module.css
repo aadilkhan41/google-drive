@@ -1,0 +1,50 @@
+.nav {
+    height: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    position: fixed;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.nav a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.nav a.active svg {
+    fill: #194afc;
+}
+
+.nav a.active label {
+    color: #194afc;
+}
+
+.nav i {
+    display: flex;
+    justify-content: center;
+}
+
+.nav svg {
+    width: 24px;
+    height: 24px;
+}
+
+.nav label {
+    font-size: 12px;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+@media (min-width: 720px) {
+    .nav {
+        display: none;
+    }
+}

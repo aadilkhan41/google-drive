@@ -1,0 +1,88 @@
+.sharewith{
+    inset: 0;
+    z-index: 3;
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sharewith.active{
+    display: block;
+}
+
+.sharewith .close{
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.sharewith .close svg{
+    width: 25px;
+    height: 25px;
+}
+
+.sharecont{
+    width: 250px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.sharecont h1{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ced4da;
+}
+
+.sharecont p{
+    text-align: center;
+    font-size: 13px;
+}
+
+.profilesection{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.profilesection img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.profilesection h2{
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profilesection button{
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background-color: dodgerblue;
+}

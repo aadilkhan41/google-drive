@@ -1,0 +1,89 @@
+.aside{
+    width: 255px;
+    height: 100%;
+    display: flex;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: #F8FAFD;
+}
+
+.uploadBtn{
+    width: 100px;
+    position: relative;
+}
+
+.uploadBtn div{
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    padding: 13px 25px 13px 13px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: absolute;
+}
+
+.uploadBtn svg{
+    width: 25px;
+    height: 25px;
+}
+
+.uploadBtn p{
+    margin: 0;
+}
+
+.uploadBtn input{
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    position: relative;
+}
+
+.storageLevel{
+    padding: 0 13px;
+}
+
+.storageLevel div{
+    width: 100%;
+    display: flex;
+    border-radius: 3px;
+    background-color: #E1E3E1;
+}
+
+.storageLevel div span{
+    width: 71%;
+    padding: 2px 0;
+    border-radius: 3px;
+    background-color: #0B57D0;
+}
+
+.storageLevel p{
+    color: #495057;
+    margin: 5px 0 10px 0;
+    font-size: 15px;
+}
+
+.storageLevel button{
+    color: #0B57D0;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #495057;
+    background-color: rgba(0,0,0,0);
+}
+
+.storageLevel button:hover{
+    background-color: #E6EDFA;
+}
+
+@media (max-width: 720px) {
+    .aside{
+        display: none;
+    }
+}
