@@ -1,12 +1,49 @@
-# React + Vite
+# Google Drive - Cloud Storage Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project allows users to upload, preview, manage, and download various types of files in a familiar drive-like interface. It includes search functionality, supports sharing of documents, photos, and videos up to 10GB, and enables file downloads without any compression.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+![Google Drive Clone](./screenshot.jpg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Click here to try Google Drive](https://google-drive-green-ten.vercel.app/)
+
+---
+
+## 🧰 Tech Stack
+
+- **React** (v19)
+- **Firebase Authentication**
+- **Firebase Firestore**
+- **Redux Toolkit**
+- **Axios**
+- **Cloudinary**
+- **React Router DOM** (+6.4v)
+- **React Hook Form**
+- **Google Icons**
+- **React Toastify**
+
+---
+
+## 🔑 Key Features
+
+- ✅ **Responsive UI** — Works perfectly on all devices
+- 🔐 **Firebase Auth** — Secure user login/signup
+- 🔍 **Real-time Search with Debouncing** — Built with Redux Toolkit
+- 📤 **Files Sharing** — Built with Firebase Firestore
+- 🧾 **Various File Support**
+- 🚀 **Upload Files in Background** — Handled using `react-hook-form`
+- 📁 **Visualize files in Thumbnail and Table**
+- ⚡ **File filtering**
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/aadilkhan41/google-drive
+cd drive
+npm install
+npm start
